@@ -65,7 +65,7 @@ def facade_test() -> bool:
     O código do cliente é super simples
     '''
     facade = Facade()
-    assert(facade.operation())
+    return facade.operation()
     
 # Main
 def main() -> None:
