@@ -58,7 +58,7 @@ class ProxySubject(AbstractSubject):
         print("Proxy: Autenticando acesso...")
         return True
     
-    def log_acess(self) -> None:
+    def log_access(self) -> None:
         print("Proxy: Registrando log de acesso...")
         
 def client(sbj: AbstractSubject) -> None:
