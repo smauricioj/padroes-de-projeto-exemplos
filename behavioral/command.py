@@ -25,7 +25,10 @@ class SimpleCommand(AbstractCommand):
     Comandos simples podem implementar o código associado à uma tarefa
     sozinhos
     '''
-            
+        
+    def __init__(self, foo: str = "bar") -> None:
+        self._foo: str = foo
+
     def execute(self) -> None:
         print(f"Fazendo algo simples, com foo = {self._foo}")
         
